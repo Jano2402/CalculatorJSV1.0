@@ -1,0 +1,123 @@
+:root {
+    --negro: #000;
+    --gris: #999999;
+    --blanco: #fff;
+    --naranja: #cc6600;
+    --grisOscuro: #727272;
+    --naranjaOscuro: #964b00;
+    --negroClaro: #353535;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-image: url(img/background.webp);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-size: 3rem;
+}
+
+/* Contenedor */
+
+.boton {
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 30rem;
+}
+.calculator {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    border-radius: 2rem;
+    backdrop-filter: blur 10px;
+}
+.calculator__screen {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    padding: 0 2rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.zero {
+    margin-right: 2rem;
+}
+.number {
+    border: none;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: var(--negro);
+    font-size: 1.8rem;
+    color: var(--blanco);
+    transition: background-color .5s;
+}
+.number:hover {
+    background-color: var(--negroClaro);
+}
+.operator {
+    border: none;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: var(--naranja);
+    font-size: 1.8rem;
+    color: var(--blanco);
+    transition: background-color .5s;
+}
+.operator:hover {
+    background-color: var(--naranjaOscuro);
+}
+.C, .remove, .operator__percent {
+    border: none;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: var(--gris);
+    font-size: 1.8rem;
+    color: var(--blanco);
+    transition: background-color .5s;
+}
+.C:hover, .remove:hover, .operator__percent:hover {
+    background-color: var(--grisOscuro);
+}
+.calculator__keys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.fila5 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .3rem;
+}
+.zero__key {
+    grid-column: 1/3;
+    border: none;
+    padding: 2rem;
+    background-color: var(--negro);
+    font-size: 1.8rem;
+    color: var(--blanco);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+.zero__key:hover {
+    background-color: var(--negroClaro);
+}
