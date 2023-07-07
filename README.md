@@ -1,12 +1,1 @@
-graph LR
-    A[Lípidos]
-    A --> B[Lípidos simples]
-    A --> C[Lípidos compuestos]
-    A --> D[Lípidos derivados]
-    B --> E[Ácidos grasos]
-    B --> F[Triglicéridos]
-    C --> G[Fosfolípidos]
-    C --> H[Glicolípidos]
-    C --> I[Esfingolípidos]
-    D --> J[Esteroides]
-    D --> K[Hormonas esteroides]
+
